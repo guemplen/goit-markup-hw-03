@@ -1,0 +1,204 @@
+/* ================ VARIABLES ================ */
+
+:root {
+  --global-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+  --global-text-color: #434455;
+  --second-text-color: #2e2f42;
+  --background-color-white: #fff;
+  --background-color-grey: #f4f4fd;
+  --global-color-blue: #4d5ae5;
+  --active-button: #404bbf;
+}
+
+/* ================ VARIABLES ================ */
+
+/* ================ COMMON ================ */
+
+body {
+  font-family: var(--global-font);
+  background-color: var(--background-color-white);
+  color: var(--global-text-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--active-button);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--active-button);
+}
+
+/* ================ COMMON ================ */
+
+/* ================ COMPONENTS ================ */
+
+.headlines {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--second-text-color);
+}
+
+/* ================ COMPONENTS ================ */
+
+.logo {
+  font-family: var(--second-font);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  color: var(--global-color-blue);
+}
+
+.studio {
+  color: var(--second-text-color);
+}
+
+.studio-footer {
+  color: var(--background-color-grey);
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background: var(--background-color-white);
+  color: var(--second-text-color);
+}
+
+.address {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  font-style: normal;
+}
+
+.address-color {
+  color: var(--global-text-color);
+}
+
+.hero {
+  text-align: center;
+  background-color: var(--second-text-color);
+  color: var(--background-color-white);
+}
+
+.hero-headline {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  background-color: var(--global-color-blue);
+  color: var(--background-color-white);
+}
+
+.advantages {
+  color: var(--second-text-color);
+}
+
+.advantages-headline {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background-color: var(--background-color-white);
+  color: var(--global-text-color);
+}
+
+.item-background {
+  background-color: var(--background-color-white);
+}
+
+.team {
+  background-color: var(--background-color-grey);
+}
+
+.team-headline {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  background-color: var(--background-color-white);
+  color: var(--second-text-color);
+}
+
+.footer {
+  background-color: var(--second-text-color);
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--background-color-grey);
+}
+
+.filter-button {
+  font-family: var(--global-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  background-color: var(--background-color-grey);
+  color: var(--global-color-blue);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--active-button);
+  color: var(--background-color-white);
+}
+
+.portfolio {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  background-color: var(--background-color-white);
+  color: var(--second-text-color);
+}
+
+.portfolio-headline {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
