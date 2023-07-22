@@ -9,16 +9,47 @@
   --background-color-grey: #f4f4fd;
   --global-color-blue: #4d5ae5;
   --active-button: #404bbf;
+  --border-color: #e7e9fc;
 }
 
 /* ================ VARIABLES ================ */
 
 /* ================ COMMON ================ */
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+li {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: var(--global-font);
   background-color: var(--background-color-white);
   color: var(--global-text-color);
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 a:hover,
@@ -36,6 +67,9 @@ a:focus {
 
 button {
   cursor: pointer;
+  border: none;
+  background-color: var(--global-color-blue);
+  color: var(--background-color-white);
 }
 
 button:hover,
@@ -43,11 +77,25 @@ button:focus {
   background-color: var(--active-button);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ================ COMMON ================ */
 
 /* ================ COMPONENTS ================ */
 
 .headlines {
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -77,6 +125,27 @@ button:focus {
   color: var(--background-color-grey);
 }
 
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 452px;
+}
+
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
+
 .header {
   font-size: 16px;
   font-weight: 500;
@@ -87,6 +156,9 @@ button:focus {
 }
 
 .address {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -98,6 +170,14 @@ button:focus {
   color: var(--global-text-color);
 }
 
+.hero-container {
+  align-items: center;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 188px 0;
+}
+
 .hero {
   text-align: center;
   background-color: var(--second-text-color);
@@ -105,6 +185,7 @@ button:focus {
 }
 
 .hero-headline {
+  margin-bottom: 48px;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -112,20 +193,39 @@ button:focus {
 }
 
 .hero-button {
+  min-width: 169px;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.64px;
-  background-color: var(--global-color-blue);
-  color: var(--background-color-white);
 }
 
 .advantages {
+  padding-bottom: 0;
   color: var(--second-text-color);
 }
 
+.flex-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/*.advantages-item:not:(first-child) {
+  margin-left: 24px;
+}*/
+
 .advantages-headline {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -134,6 +234,8 @@ button:focus {
 }
 
 .item {
+  flex-basis: auto;
+  max-width: 264px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -146,11 +248,16 @@ button:focus {
   background-color: var(--background-color-white);
 }
 
+.doing-style {
+  border: 1px solid var(--border-color);
+}
+
 .team {
   background-color: var(--background-color-grey);
 }
 
 .team-headline {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -159,11 +266,33 @@ button:focus {
   color: var(--second-text-color);
 }
 
+.team-container {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  padding: 32px 0;
+  text-align: center;
+}
+
 .footer {
   background-color: var(--second-text-color);
 }
 
+.footer-flex {
+  display: flex;
+  gap: 17.5px;
+  flex-basis: auto;
+  flex-direction: column;
+  padding-left: 156px;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+  margin-top: 120px;
+}
+
 .footer-text {
+  max-width: 264px;
+  border: 140px 1020px 100px 156px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -171,7 +300,20 @@ button:focus {
   color: var(--background-color-grey);
 }
 
+.filter-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
 .filter-button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   font-family: var(--global-font);
   font-size: 16px;
   font-weight: 500;
@@ -187,6 +329,13 @@ button:focus {
   color: var(--background-color-white);
 }
 
+.portfolio-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
 .portfolio {
   font-size: 20px;
   font-weight: 500;
@@ -197,8 +346,28 @@ button:focus {
 }
 
 .portfolio-headline {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.portfolio-item {
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  background-color: var(--background-color-white);
+  color: var(--global-text-color);
 }
