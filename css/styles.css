@@ -118,6 +118,7 @@ button:focus {
 }
 
 .studio {
+  margin-right: 76px;
   color: var(--second-text-color);
 }
 
@@ -141,12 +142,13 @@ button:focus {
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .header-menu {
   margin-top: 24px;
   margin-bottom: 24px;
+  padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -158,7 +160,7 @@ button:focus {
 .address {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -179,15 +181,18 @@ button:focus {
 }
 
 .hero-container {
-  width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding: 188px 0;
+  align-items: center;
+  max-width: 1440px;
+  max-height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--second-text-color);
 }
 
 .hero {
   text-align: center;
-  background-color: var(--second-text-color);
   color: var(--background-color-white);
 }
 
@@ -203,6 +208,8 @@ button:focus {
 }
 
 .hero-button {
+  display: block;
+  margin: auto;
   min-width: 169px;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -230,10 +237,6 @@ button:focus {
   flex-direction: column;
 }
 
-/*.advantages-item:not:(first-child) {
-  margin-left: 24px;
-}*/
-
 .advantages-headline {
   margin-bottom: 8px;
   font-size: 20px;
@@ -255,6 +258,7 @@ button:focus {
 }
 
 .item-background {
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--background-color-white);
 }
 
@@ -338,10 +342,12 @@ button:focus {
   letter-spacing: 0.64px;
   background-color: var(--background-color-grey);
   color: var(--global-color-blue);
+  border: 1px solid var(--border-color);
 }
 
 .filter-button:hover,
 .filter-button:focus {
+  border: 1px solid transparent;
   background-color: var(--active-button);
   color: var(--background-color-white);
 }
@@ -351,6 +357,7 @@ button:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-pic {
@@ -362,12 +369,15 @@ button:focus {
   color: var(--second-text-color);
 }
 
+.portfolio-item {
+  border-top: none;
+  padding: 32px 16px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color-white);
+}
+
 .portfolio-headline {
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -375,16 +385,10 @@ button:focus {
   color: var(--second-text-color);
 }
 
-.portfolio-item {
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+.portfolio-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  background-color: var(--background-color-white);
   color: var(--global-text-color);
 }
