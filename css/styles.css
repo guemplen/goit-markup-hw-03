@@ -108,6 +108,7 @@ button:focus {
 /* ================ COMPONENTS ================ */
 
 .logo {
+  margin-right: 76px;
   font-family: var(--second-font);
   font-size: 18px;
   font-weight: 800;
@@ -118,12 +119,7 @@ button:focus {
 }
 
 .studio {
-  margin-right: 76px;
   color: var(--second-text-color);
-}
-
-.studio-footer {
-  color: var(--background-color-grey);
 }
 
 .page-header {
@@ -294,17 +290,18 @@ button:focus {
   background-color: var(--second-text-color);
 }
 
-.footer-flex {
-  display: flex;
-  gap: 17.5px;
+.footer-block {
+  display: inline-block;
   flex-basis: auto;
-  flex-direction: column;
   padding-left: 156px;
 }
 
 .footer-logo {
-  display: inline-block;
   margin-bottom: 16px;
+}
+
+.studio-footer {
+  color: var(--background-color-grey);
 }
 
 .footer-text {
@@ -372,12 +369,12 @@ button:focus {
 .portfolio-item {
   border-top: none;
   padding: 32px 16px;
-  margin-bottom: 8px;
   border: 1px solid var(--border-color);
   background-color: var(--background-color-white);
 }
 
 .portfolio-headline {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
