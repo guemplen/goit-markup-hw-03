@@ -129,9 +129,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--border-color);
+  max-height: 72px;
 }
 
 .page-nav {
@@ -146,7 +144,9 @@ button:focus {
   column-gap: 40px;
 }
 
-.header {
+.header-menu {
+  margin-top: 24px;
+  margin-bottom: 24px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -168,6 +168,14 @@ button:focus {
 
 .address-color {
   color: var(--global-text-color);
+}
+
+.header-line {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  max-width: 1440px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .hero-container {
